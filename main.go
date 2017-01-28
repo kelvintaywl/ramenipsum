@@ -111,12 +111,19 @@ func randomText(x int) string {
 }
 
 func handler(c *gin.Context) {
-	para := c.Param("paragraphs")
+	para := c.Param("num")
 	n, err := strconv.Atoi(para)
 	if err != nil {
 		n = 1
 	}
 	c.String(http.StatusOK, randomText(n))
+}
+
+func indexHandler(c *gin.Context) {
+	c.HTML(http.StatusOK, "index.tmpl",
+		gin.H{
+			"title": "Ramen Ipsum: A brothier Lorem Ipsum generator",
+		})
 }
 
 func main() {
@@ -127,7 +134,10 @@ func main() {
 
 	router := gin.New()
 	router.Use(gin.Logger())
-	router.GET("/:paragraphs", handler)
+	router.Static("/assets", "assets")
+	router.LoadHTMLGlob("templates/*")
+	router.GET("/", indexHandler)
+	router.GET("/paragraphs/:num", handler)
 
 	router.Run(":" + port)
 }
