@@ -1,12 +1,15 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"math/rand"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/gin-gonic/gin"
 )
 
 var ipsum = [...]string{
@@ -107,18 +110,24 @@ func randomText(x int) string {
 	return ran(x, randomParagraph, nil, "\n\n")
 }
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	var str string
-	i, err := strconv.Atoi(r.URL.Path[len("/ramen/"):])
+func handler(c *gin.Context) {
+	para := c.Param("paragraphs")
+	n, err := strconv.Atoi(para)
 	if err != nil {
-		str = randomText(1)
-	} else {
-		str = randomText(i)
+		n = 1
 	}
-	fmt.Fprint(w, str)
+	c.String(http.StatusOK, randomText(n))
 }
 
 func main() {
-	http.HandleFunc("/ramen/", handler)
-	http.ListenAndServe(":9000", nil)
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
+
+	router := gin.New()
+	router.Use(gin.Logger())
+	router.GET("/:paragraphs", handler)
+
+	router.Run(":" + port)
 }
