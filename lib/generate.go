@@ -5,7 +5,10 @@ import (
 	"strings"
 )
 
-var ipsum = [...]string{
+// Words is a list of ramen-related words
+// Feel free to add more words to this list
+// more ingredients, more flavour!
+var Words = [...]string{
 	"soy sauce",
 	"salt",
 	"miso",
@@ -58,26 +61,14 @@ var ipsum = [...]string{
 	"Nissin instant cup ramen",
 }
 
-// Generate implements a generator of a randomized text
-type Generate func() string
+// generate implements a generator of a randomized text
+type generate func() string
 
-// Operation implements an operation onto an input text
-type Operation func(string) string
+// operation implements an operation onto an input text
+type operation func(string) string
 
-// randIntFromRange returns a random integer between
-// the range [min, max]. Note that it assumes min < max
-func RandIntFromRange(min, max int) int {
-	return rand.Intn(max-min) + min + 1
-}
-
-func RandomWord() string {
-	// pick a random word from the ipsum list
-	return ipsum[rand.Intn(len(ipsum))]
-}
-
-// stylizeSentence implements the Operation function
-// and formats a text with capitalization and punctuation
 func stylizeSentence(s string) string {
+	// formats a text with capitalization and punctuation
 	return strings.ToUpper(s[:1]) + s[1:] + "."
 }
 
@@ -85,7 +76,7 @@ func stylizeSentence(s string) string {
 // a separator. It uses the input Generate function to build elements.
 // This is an attempt at using compositions when simplfying the task
 // of generating paragraphs of sentences of random words.
-func gen(g Generate, o Operation, size int, sep string) string {
+func gen(g generate, o operation, size int, sep string) string {
 	var elems []string
 	for i := 0; i < size; i++ {
 		elems = append(elems, g())
@@ -97,16 +88,31 @@ func gen(g Generate, o Operation, size int, sep string) string {
 	return res
 }
 
+// RandIntFromRange returns a random integer between
+// the range [min, max]. Note that it assumes min < max
+func RandIntFromRange(min, max int) int {
+	return rand.Intn(max-min) + min + 1
+}
+
+// RandomWord picks and returns a random word from a predefined list
+func RandomWord() string {
+	// pick a random word from the list
+	return Words[rand.Intn(len(Words))]
+}
+
+// RandomSentence returns a sentence of random words, complete with punctuation.
 func RandomSentence() string {
 	s := RandIntFromRange(7, 19)
 	return gen(RandomWord, stylizeSentence, s, " ")
 }
 
+// RandomParagraph returns a paragraphs made of random words.
 func RandomParagraph() string {
 	s := RandIntFromRange(3, 7)
 	return gen(RandomSentence, nil, s, " ")
 }
 
-func RandomText(x int) string {
-	return gen(RandomParagraph, nil, x, "\n\n")
+// RandomText returns a blob of text (N paragraphs) of random words
+func RandomText(n int) string {
+	return gen(RandomParagraph, nil, n, "\n\n")
 }
