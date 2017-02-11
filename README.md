@@ -15,8 +15,16 @@ A fun project to perhaps commemorate my 3 years in Tokyo, Japan so far.
 
 ### Try
 
+> Note: this project uses GoVendor for dependency management.
+
 ```
+# install govendor
+$ go get -u github.com/kardianos/govendor
+
 $ go get github.com/kelvintaywl/ramenipsum
+# install dependencies with govendor
+$ govendor add +external
+
 $ PORT=9000 go run main.go
 ```
 
