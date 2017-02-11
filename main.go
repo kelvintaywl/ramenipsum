@@ -31,6 +31,7 @@ func indexHandler(c *gin.Context) {
 	c.HTML(http.StatusOK, "index.tmpl",
 		gin.H{
 			"title": "Ramen Ipsum: A brothier Lorem Ipsum generator",
+			"url":   c.Request.Host,
 		})
 }
 
