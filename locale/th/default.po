@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ramen Ipsum 0.1.0\n"
+"Last-Translator: Kelvin Tay <kelvintaywl@gmail.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "[word sep]"
+msgstr ""
+
+msgid "[sentence suffix]"
+msgstr ""
+
+msgid "[sentence sep]"
+msgstr " "
+
+msgid "soy sauce"
+msgstr "ซีอิ๊ว"
+
+msgid "salt"
+msgstr "เกลือ"
+
+msgid "miso"
+msgstr "มิโสะ"
+
+msgid "butter"
+msgstr "เนย"
+
+msgid "roasted pork slices"
+msgstr "หมูแดง"
+
+msgid "flavoured oil"
+msgstr "น้ำมันพริก"
+
+msgid "yuzu"
+msgstr "ยูซุ"
+
+msgid "seasoned egg"
+msgstr "ไข่ปรุงรสพิเศษ"
+
+msgid "nori"
+msgstr "โนริ"
+
+msgid "pork bones"
+msgstr "กระดูกหมู"
+
+msgid "bean sprouts"
+msgstr "ต้นกล้า"
+
+msgid "chopped onions"
+msgstr "หอมสับ"
+
+msgid "chilli"
+msgstr "น้ำพริก"
+
+msgid "chicken stock"
+msgstr "น้ำสต๊อกไก่"
+
+msgid "kamaboko"
+msgstr "คะมะโบะโกะ"
+
+msgid "spicy bean paste"
+msgstr "เต้าเจี้ยวเผ็ด"
+
+msgid "bamboo slices"
+msgstr "หน่อไม้"
+
+msgid "sesame oil"
+msgstr "น้ำมันงา"
+
+msgid "minced garlic"
+msgstr "กระเทียมสับ"
+
+msgid "corn"
+msgstr "ข้าวโพด"
+
+msgid "pork cubes"
+msgstr "หมู"
+
+msgid "scallions"
+msgstr "ต้นหอมจีน"
+
+msgid "spinach"
+msgstr "ผักขม"
+
+msgid "leek"
+msgstr "กระเทียมหอม"
+
+msgid "curry"
+msgstr "เครื่องแกง"
+
+msgid "vinegar"
+msgstr "น้ำส้มสายชู"
+
+msgid "ginger"
+msgstr "ขิง"
+
+msgid "lard"
+msgstr "น้ำมันหมู"
+
+msgid "fish broth"
+msgstr "น้ำปลา"
+
+msgid "rice"
+msgstr "ข้าว"
+
+msgid "ground black pepper"
+msgstr "พริกไทยดำ"
+
+msgid "soy milk"
+msgstr "นมถั่วเหลือง"
+
+msgid "wood ear mushroom"
+msgstr "เห็ด"
+
+msgid "toasted sesame seeds"
+msgstr "เมล็ดงา"
+
+msgid "mustard greens"
+msgstr "ผักกาด"
+
+msgid "Asahikawa"
+msgstr "อะซะฮิงะวะ"
+
+msgid "Hakodate"
+msgstr "ฮาโกดาเตะ"
+
+msgid "Sapporo"
+msgstr "ซัปโปโร"
+
+msgid "Yokohama"
+msgstr "โยโกฮามา"
+
+msgid "Hakata"
+msgstr "ฮากาตะ"
+
+msgid "Tokyo"
+msgstr "โตเกียว"
+
+msgid "Tokushima"
+msgstr "โทะกุชิมะ"
+
+msgid "Kagoshima"
+msgstr "ฮากาตะ"
+
+msgid "Wakayama"
+msgstr "วาคายามะ"
+
+msgid "Nagoya"
+msgstr "นาโกย่า"
+
+msgid "Kumamoto"
+msgstr "คุมาโมโตะ"
+
+msgid "ramen burger"
+msgstr "เบอร์เกอร์ราเม็ง"
+
+msgid "tsukemen"
+msgstr "ก๋วยเตี๋ยวน้ำตกญี่ปุ่น"
+
+msgid "abura soba"
+msgstr "โซบะน้ำมัน"
+
+msgid "Nissin instant cup ramen"
+msgstr "บะหมี่ถ้วย"
