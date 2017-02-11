@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ramen Ipsum 0.1.0\n"
+"Last-Translator: Kelvin Tay <kelvintaywl@gmail.com>\n"
+"Language: en_UK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "[word sep]"
+msgstr " "
+
+msgid "[sentence suffix]"
+msgstr "."
+
+msgid "[sentence sep]"
+msgstr " "
+
+msgid "soy sauce"
+msgstr "soy sauce"
+
+msgid "salt"
+msgstr "salt"
+
+msgid "miso"
+msgstr "miso"
+
+msgid "butter"
+msgstr "butter"
+
+msgid "roasted pork slices"
+msgstr "roasted pork slices"
+
+msgid "flavoured oil"
+msgstr "flavoured oil"
+
+msgid "yuzu"
+msgstr "yuzu"
+
+msgid "seasoned egg"
+msgstr "seasoned egg"
+
+msgid "nori"
+msgstr "nori"
+
+msgid "pork bones"
+msgstr "pork bones"
+
+msgid "bean sprouts"
+msgstr "bean sprouts"
+
+msgid "chopped onions"
+msgstr "chopped onions"
+
+msgid "chilli"
+msgstr "chilli"
+
+msgid "chicken stock"
+msgstr "chicken stock"
+
+msgid "kamaboko"
+msgstr "kamaboko"
+
+msgid "spicy bean paste"
+msgstr "spicy bean paste"
+
+msgid "bamboo slices"
+msgstr "bamboo slices"
+
+msgid "sesame oil"
+msgstr "sesame oil"
+
+msgid "minced garlic"
+msgstr "minced garlic"
+
+msgid "corn"
+msgstr "corn"
+
+msgid "pork cubes"
+msgstr "pork cubes"
+
+msgid "scallions"
+msgstr "scallions"
+
+msgid "spinach"
+msgstr "spinach"
+
+msgid "leek"
+msgstr "leek"
+
+msgid "curry"
+msgstr "curry"
+
+msgid "vinegar"
+msgstr "vinegar"
+
+msgid "ginger"
+msgstr "ginger"
+
+msgid "lard"
+msgstr "lard"
+
+msgid "fish broth"
+msgstr "fish broth"
+
+msgid "rice"
+msgstr "rice"
+
+msgid "ground black pepper"
+msgstr "ground black pepper"
+
+msgid "soy milk"
+msgstr "soy milk"
+
+msgid "wood ear mushroom"
+msgstr "wood ear mushroom"
+
+msgid "toasted sesame seeds"
+msgstr "toasted sesame seeds"
+
+msgid "mustard greens"
+msgstr "mustard greens"
+
+msgid "Asahikawa"
+msgstr "Asahikawa"
+
+msgid "Hakodate"
+msgstr "Hakodate"
+
+msgid "Sapporo"
+msgstr "Sapporo"
+
+msgid "Yokohama"
+msgstr "Yokohama"
+
+msgid "Hakata"
+msgstr "Hakata"
+
+msgid "Tokyo"
+msgstr "Tokyo"
+
+msgid "Tokushima"
+msgstr "Tokushima"
+
+msgid "Kagoshima"
+msgstr "Kagoshima"
+
+msgid "Wakayama"
+msgstr "Wakayama"
+
+msgid "Nagoya"
+msgstr "Nagoya"
+
+msgid "Kumamoto"
+msgstr "Kumamoto"
+
+msgid "ramen burger"
+msgstr "ramen burger"
+
+msgid "tsukemen"
+msgstr "tsukemen"
+
+msgid "abura soba"
+msgstr "abura soba"
+
+msgid "Nissin instant cup ramen"
+msgstr "Nissin instant cup ramen"

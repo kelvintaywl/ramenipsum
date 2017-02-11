@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ramen Ipsum 0.1.0\n"
+"Last-Translator: Kelvin Tay <kelvintaywl@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "[word sep]"
+msgstr ""
+
+msgid "[sentence suffix]"
+msgstr "。"
+
+msgid "[sentence sep]"
+msgstr " "
+
+
+msgid "soy sauce"
+msgstr "醤油"
+
+msgid "salt"
+msgstr "塩"
+
+msgid "miso"
+msgstr "味噌"
+
+msgid "butter"
+msgstr "バター"
+
+msgid "roasted pork slices"
+msgstr "チャーシュー"
+
+msgid "flavoured oil"
+msgstr "ラー油"
+
+msgid "yuzu"
+msgstr "ゆず"
+
+msgid "seasoned egg"
+msgstr "味付け卵"
+
+msgid "nori"
+msgstr "のり"
+
+msgid "pork bones"
+msgstr "とんこつ"
+
+msgid "bean sprouts"
+msgstr "もやし"
+
+msgid "chopped onions"
+msgstr "刻み玉ねぎ"
+
+msgid "chilli"
+msgstr "唐辛子"
+
+msgid "chicken stock"
+msgstr "鶏がらスープ"
+
+msgid "kamaboko"
+msgstr "かまぼこ"
+
+msgid "spicy bean paste"
+msgstr "豆板醤"
+
+msgid "bamboo slices"
+msgstr "メンマ"
+
+msgid "sesame oil"
+msgstr "胡麻油"
+
+msgid "minced garlic"
+msgstr "ニンニク"
+
+msgid "corn"
+msgstr "コーン"
+
+msgid "pork cubes"
+msgstr "豚バラ"
+
+msgid "scallions"
+msgstr "新玉ねぎ"
+
+msgid "spinach"
+msgstr "ほうれん草"
+
+msgid "leek"
+msgstr "西洋葱"
+
+msgid "curry"
+msgstr "カレー"
+
+msgid "vinegar"
+msgstr "酢"
+
+msgid "ginger"
+msgstr "生姜"
+
+msgid "lard"
+msgstr "ラード"
+
+msgid "fish broth"
+msgstr "カツオだし"
+
+msgid "rice"
+msgstr "御飯"
+
+msgid "ground black pepper"
+msgstr "胡椒"
+
+msgid "soy milk"
+msgstr "豆乳"
+
+msgid "wood ear mushroom"
+msgstr "木耳"
+
+msgid "toasted sesame seeds"
+msgstr "ごま"
+
+msgid "mustard greens"
+msgstr "小松菜"
+
+msgid "Asahikawa"
+msgstr "旭川"
+
+msgid "Hakodate"
+msgstr "函館"
+
+msgid "Sapporo"
+msgstr "札幌"
+
+msgid "Yokohama"
+msgstr "横浜"
+
+msgid "Hakata"
+msgstr "博多"
+
+msgid "Tokyo"
+msgstr "東京"
+
+msgid "Tokushima"
+msgstr "徳島"
+
+msgid "Kagoshima"
+msgstr "鹿児島"
+
+msgid "Wakayama"
+msgstr "和歌山"
+
+msgid "Nagoya"
+msgstr "名古屋"
+
+msgid "Kumamoto"
+msgstr "熊本"
+
+msgid "ramen burger"
+msgstr "ラーメンバーガー"
+
+msgid "tsukemen"
+msgstr "つけ麺"
+
+msgid "abura soba"
+msgstr "油そば"
+
+msgid "Nissin instant cup ramen"
+msgstr "カップラーメン"

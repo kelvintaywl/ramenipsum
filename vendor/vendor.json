@@ -27,10 +27,37 @@
 			"revisionTime": "2016-11-17T03:31:26Z"
 		},
 		{
+			"checksumSHA1": "61dVWixiaXQ4T5JZvU3+g7XKPh8=",
+			"path": "github.com/leonelquinteros/gotext",
+			"revision": "2c51ed200042744974d6e4cc82dc239d6b55e3fd",
+			"revisionTime": "2016-08-09T15:57:24Z"
+		},
+		{
 			"checksumSHA1": "b0T0Hzd+zYk+OCDTFMps+jwa/nY=",
 			"path": "github.com/manucorporat/sse",
 			"revision": "ee05b128a739a0fb76c7ebd3ae4810c1de808d6d",
 			"revisionTime": "2016-01-26T18:01:36Z"
+		},
+		{
+			"checksumSHA1": "VHRTXR1ah5YpbeLAjUX89Y4lfGc=",
+			"origin": "github.com/leonelquinteros/gotext/vendor/github.com/mattn/anko/ast",
+			"path": "github.com/mattn/anko/ast",
+			"revision": "2c51ed200042744974d6e4cc82dc239d6b55e3fd",
+			"revisionTime": "2016-08-09T15:57:24Z"
+		},
+		{
+			"checksumSHA1": "7vWnvutUAg6vlq9xvrEwHaY1nOE=",
+			"origin": "github.com/leonelquinteros/gotext/vendor/github.com/mattn/anko/parser",
+			"path": "github.com/mattn/anko/parser",
+			"revision": "2c51ed200042744974d6e4cc82dc239d6b55e3fd",
+			"revisionTime": "2016-08-09T15:57:24Z"
+		},
+		{
+			"checksumSHA1": "pVUSkX4Zd6rEo9/xAI3bQxVsY6Y=",
+			"origin": "github.com/leonelquinteros/gotext/vendor/github.com/mattn/anko/vm",
+			"path": "github.com/mattn/anko/vm",
+			"revision": "2c51ed200042744974d6e4cc82dc239d6b55e3fd",
+			"revisionTime": "2016-08-09T15:57:24Z"
 		},
 		{
 			"checksumSHA1": "xZuhljnmBysJPta/lMyYmJdujCg=",
