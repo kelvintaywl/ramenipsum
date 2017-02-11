@@ -1,137 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="icon" href="assets/img/favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <title>{{ .title }}</title>
 
-<title>{{ .title }}</title>
+  <!-- Bootstrap core CSS -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap core CSS -->
-<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<link href="assets/css/style.css" rel="stylesheet">
+  <!-- Vue JS -->
+  <script src="//unpkg.com/vue/dist/vue.js"></script>
 
-<!-- Vue JS -->
-<script src="//unpkg.com/vue/dist/vue.js"></script>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="#">Ramen Ipsum</a>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav navbar-right">
-<li><a href="//github.com/kelvintaywl/ramenipsum">Github</a></li>
-</ul>
-</div><!--/.nav-collapse -->
-</div>
-</div>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ramen Ipsum</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="//github.com/kelvintaywl/ramenipsum">Github</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
 
-<!-- ********** HEADER SECTION ********** -->
-<section id="home"></section>
-<div id="main">
-<div class="container">
-<div class="row">
-<div class="col-md-7">
-<h1 class="jp">ラーメンイップサム</h1>
-<p class="big mt">A brothier Lorem Ipsum generator.</p>
-<p>Choose your ramen portion:</p>
-<form class="form-inline" v-on:submit.prevent>
-<div class="form-group">
-<select class="form-control input-sm" v-model="lc">
-<option v-for="(code, name) in lc_opts" v-bind:value="code">${name}</option>
-</select>
-<button v-on:click="getText(1)" class="btn btn-sm jp">並盛り</button>
-<button v-on:click="getText(3)" class="btn btn-md jp">大盛り</button>
-<button v-on:click="getText(7)" class="btn btn-lg jp">特盛り</button>
-</div>
-</form>
+  <!-- ********** HEADER SECTION ********** -->
+  <section id="home"></section>
+  <div id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="jp">ラーメンイップサム</h1>
+          <p class="big mt">A brothier Lorem Ipsum generator.</p>
+          <p>Choose your ramen portion:</p>
+          <form class="form-inline" v-on:submit.prevent>
+            <div class="form-group">
+              <select class="form-control input input-sm" v-model="lc">
+                <option v-for="(code, name) in opts.lc" v-bind:value="code">${name}</option>
+              </select>
+              <button v-for="(data, name) in opts.size" v-on:click="getText(data[1])" class= "btn" v-bind:class="data[0]">${name}</button>
+            </div>
+          </form>
 
-<div id="input_area">
-<br>
-<textarea class="form-control" rows="8">${text}</textarea>>
-</div>
+          <div id="input_area">
+            <br>
+            <textarea class="form-control" rows="8">${text}</textarea>>
+          </div>
+          <p>Or simply call <a href="/paragraphs/5">{{ .url }}/paragraphs/5</a> for 5 paragraphs of tasty tasty text.</p>
+        </div>
+        <div class="col-md-5">
+          <div style="padding-top: 70px">
+            <img class="img-responsive aligncenter" src="assets/img/afuri_yuzu_shio.jpg" alt="">
+          </div>
+        </div>
+      </div><!--/row -->
+    </div><!-- /.container -->
+  </div><!--/H -->
 
-<p>Or simply call <a href="/paragraphs/5">{{ .url }}/paragraphs/5</a> for 5 paragraphs of tasty tasty text.</p>
-</div>
-<div class="col-md-5">
-<div style="padding-top: 70px">
-<img class="img-responsive aligncenter" src="assets/img/afuri_yuzu_shio.jpg" alt="">
-</div>
-</div>
-</div><!--/row -->
-</div><!-- /.container -->
-</div><!--/H -->
+  <div id="footer">
+    <div class="container">
+      <div class="row centered">
+        <p>crafted in Tokyo by <a href="//github.com/kelvintaywl">@kelvintaywl</a></p>
+        <small>Ramen pictured above is Afuri's Yuzu Shio Ramen.</small>
+      </div>
+    </div><!--/container -->
+  </div><!--/F -->
 
-<div id="footer">
-<div class="container">
-<div class="row centered">
-<p>crafted in Tokyo by <a href="//github.com/kelvintaywl">@kelvintaywl</a></p>
-<small>Ramen pictured above is Afuri's Yuzu Shio Ramen.</small>
-</div>
-</div><!--/container -->
-</div><!--/F -->
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script>
-var app = new Vue({
-el: '#main',
-delimiters: ['${', '}'],
-data: {
-text: "",
-size: 1,
-lc: "en_UK",
-lc_opts: {
-"Japanese": "ja",
-"English": "en_UK"
-}
-},
-methods: {
-getText: function (size) {
-var ctx = this;
-ctx.size = size || ctx.size;
-var url = '/paragraphs/' + ctx.size;
-$.ajax(
-{
-url: url,
-dataType: "text",
-data: {"lc": ctx.lc},
-success: function onSuccess(data){
-ctx.text = data;
-}
-});
-}
-},
-watch: {
-lc: function (after, before) {
-this.getText();
-}
-}
-});
-</script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script>
+  var app = new Vue({
+    el: '#main',
+    delimiters: ['${', '}'],
+    data: {
+      text: "",
+      size: 1,
+      lc: "en_UK",
+      opts: {
+        lc: {
+          "Japanese": "ja",
+          "English": "en_UK"
+        },
+        size: {
+          "並盛り": ["btn-sm", 1],
+          "大盛り": ["btn-md", 4],
+          "特盛り": ["btn-lg", 7]
+        }
+      }
+    },
+    methods: {
+      getText: function (size) {
+        var ctx = this;
+        ctx.size = size || ctx.size;
+        var url = '/paragraphs/' + ctx.size;
+        $.ajax(
+          {
+            url: url,
+            dataType: "text",
+            data: {"lc": ctx.lc},
+            success: function onSuccess(data){
+              ctx.text = data;
+            }
+          });
+        }
+      },
+      watch: {
+        lc: function (after, before) {
+          this.getText();
+        }
+      }
+    });
+  </script>
 </body>
 </html>
