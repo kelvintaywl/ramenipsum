@@ -62,28 +62,36 @@ var Words = [...]string{
 }
 
 // generate implements a generator of a randomized text
-type generate func() string
+type generate func(string) string
 
 // operation implements an operation onto an input text
-type operation func(string) string
+type operation func(string, string) string
 
-func stylizeSentence(s string) string {
+type locale string
+
+func stylizeSentence(s string, lc string) string {
 	// formats a text with capitalization and punctuation
-	return strings.ToUpper(s[:1]) + s[1:] + "."
+	l := POLocalizer{}
+	suffix := l.GetText("[sentence suffix]", lc)
+	if lc[:2] == "en" {
+		return strings.ToUpper(s[:1]) + s[1:] + suffix
+	}
+	return s + suffix
+
 }
 
 // gen returns a specified length of text elements, conjoined by
 // a separator. It uses the input Generate function to build elements.
 // This is an attempt at using compositions when simplfying the task
 // of generating paragraphs of sentences of random words.
-func gen(g generate, o operation, size int, sep string) string {
+func gen(g generate, o operation, size int, sep, lc string) string {
 	var elems []string
 	for i := 0; i < size; i++ {
-		elems = append(elems, g())
+		elems = append(elems, g(lc))
 	}
 	res := strings.Join(elems, sep)
 	if o != nil {
-		return o(res)
+		return o(res, lc)
 	}
 	return res
 }
@@ -94,25 +102,35 @@ func RandIntFromRange(min, max int) int {
 	return rand.Intn(max-min) + min + 1
 }
 
-// RandomWord picks and returns a random word from a predefined list
-func RandomWord() string {
+func randomWord() string {
 	// pick a random word from the list
 	return Words[rand.Intn(len(Words))]
 }
 
+// RandomWord picks and returns a random word from a predefined list
+func RandomWord(lc string) string {
+	word := randomWord()
+	l := POLocalizer{}
+	return l.GetText(word, lc)
+}
+
 // RandomSentence returns a sentence of random words, complete with punctuation.
-func RandomSentence() string {
+func RandomSentence(lc string) string {
 	s := RandIntFromRange(7, 19)
-	return gen(RandomWord, stylizeSentence, s, " ")
+	l := POLocalizer{}
+	sep := l.GetText("[word sep]", lc)
+	return gen(RandomWord, stylizeSentence, s, sep, lc)
 }
 
 // RandomParagraph returns a paragraphs made of random words.
-func RandomParagraph() string {
+func RandomParagraph(lc string) string {
 	s := RandIntFromRange(3, 7)
-	return gen(RandomSentence, nil, s, " ")
+	l := POLocalizer{}
+	sep := l.GetText("[sentence sep]", lc)
+	return gen(RandomSentence, nil, s, sep, lc)
 }
 
 // RandomText returns a blob of text (N paragraphs) of random words
-func RandomText(n int) string {
-	return gen(RandomParagraph, nil, n, "\n\n")
+func RandomText(n int, lc string) string {
+	return gen(RandomParagraph, nil, n, "\n\n", lc)
 }

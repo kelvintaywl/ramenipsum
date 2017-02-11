@@ -19,11 +19,12 @@ func init() {
 
 func paragraphHandler(c *gin.Context) {
 	para := c.Param("num")
+	locale := c.DefaultQuery("lc", "en_UK")
 	n, err := strconv.Atoi(para)
 	if err != nil {
 		n = 1
 	}
-	c.String(http.StatusOK, lib.RandomText(n))
+	c.String(http.StatusOK, lib.RandomText(n, locale))
 }
 
 func indexHandler(c *gin.Context) {

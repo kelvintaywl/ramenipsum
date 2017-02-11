@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ramen Ipsum 0.1.0\n"
+"Last-Translator: Kelvin Tay <kelvintaywl@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "[word sep]"
+msgstr ""
+
+msgid "[sentence suffix]"
+msgstr ""
+
+msgid "[sentence sep]"
+msgstr ""
+
+msgid "soy sauce"
+msgstr ""
+
+msgid "salt"
+msgstr ""
+
+msgid "miso"
+msgstr ""
+
+msgid "butter"
+msgstr ""
+
+msgid "roasted pork slices"
+msgstr ""
+
+msgid "flavoured oil"
+msgstr ""
+
+msgid "yuzu"
+msgstr ""
+
+msgid "seasoned egg"
+msgstr ""
+
+msgid "nori"
+msgstr ""
+
+msgid "pork bones"
+msgstr ""
+
+msgid "bean sprouts"
+msgstr ""
+
+msgid "chopped onions"
+msgstr ""
+
+msgid "chilli"
+msgstr ""
+
+msgid "chicken stock"
+msgstr ""
+
+msgid "kamaboko"
+msgstr ""
+
+msgid "spicy bean paste"
+msgstr ""
+
+msgid "bamboo slices"
+msgstr ""
+
+msgid "sesame oil"
+msgstr ""
+
+msgid "minced garlic"
+msgstr ""
+
+msgid "corn"
+msgstr ""
+
+msgid "pork cubes"
+msgstr ""
+
+msgid "scallions"
+msgstr ""
+
+msgid "spinach"
+msgstr ""
+
+msgid "leek"
+msgstr ""
+
+msgid "curry"
+msgstr ""
+
+msgid "vinegar"
+msgstr ""
+
+msgid "ginger"
+msgstr ""
+
+msgid "lard"
+msgstr ""
+
+msgid "fish broth"
+msgstr ""
+
+msgid "rice"
+msgstr ""
+
+msgid "ground black pepper"
+msgstr ""
+
+msgid "soy milk"
+msgstr ""
+
+msgid "wood ear mushroom"
+msgstr ""
+
+msgid "toasted sesame seeds"
+msgstr ""
+
+msgid "mustard greens"
+msgstr ""
+
+msgid "Asahikawa"
+msgstr ""
+
+msgid "Hakodate"
+msgstr ""
+
+msgid "Sapporo"
+msgstr ""
+
+msgid "Yokohama"
+msgstr ""
+
+msgid "Hakata"
+msgstr ""
+
+msgid "Tokyo"
+msgstr ""
+
+msgid "Tokushima"
+msgstr ""
+
+msgid "Kagoshima"
+msgstr ""
+
+msgid "Wakayama"
+msgstr ""
+
+msgid "Nagoya"
+msgstr ""
+
+msgid "Kumamoto"
+msgstr ""
+
+msgid "ramen burger"
+msgstr ""
+
+msgid "tsukemen"
+msgstr ""
+
+msgid "abura soba"
+msgstr ""
+
+msgid "Nissin instant cup ramen"
+msgstr ""
