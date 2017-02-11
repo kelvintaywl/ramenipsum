@@ -1,9 +1,9 @@
 package lib
 
 import (
-	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 
 	"github.com/leonelquinteros/gotext"
 )
@@ -11,7 +11,7 @@ import (
 var (
 	dom  = "default"
 	lang = "en_UK"
-	lib  = fmt.Sprintf("%s/src/github.com/kelvintaywl/ramenipsum/locale", os.Getenv("GOPATH"))
+	lib  = "locale"
 )
 
 func init() {
@@ -19,14 +19,16 @@ func init() {
 }
 
 func initGetText() {
+	cd, err := os.Getwd()
+	if err != nil {
+		log.Fatal("cannot determine path of current directory")
+	}
+	cd, err = filepath.Abs(cd)
+	if err != nil {
+		log.Fatal("cannot determine absolute path of current directory")
+	}
+	lib = filepath.Clean(filepath.Join(cd, lib))
 	gotext.Configure(lib, lang, dom)
-	log.Printf("lang: %s", gotext.GetLanguage())
-	log.Printf("salt: %s", gotext.Get("salt"))
-}
-
-// Localizer ...
-type Localizer interface {
-	GetText(word string, lc locale) string
 }
 
 // POLocalizer ...

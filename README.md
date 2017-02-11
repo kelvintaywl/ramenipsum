@@ -1,4 +1,5 @@
 # Ramen Ipsum
+[![Go Report Card](https://goreportcard.com/badge/github.com/kelvintaywl/ramenipsum)](https://goreportcard.com/report/github.com/kelvintaywl/ramenipsum)
 
 A brothier Lorem Ipsum generator :ramen:
 
