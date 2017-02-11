@@ -10,8 +10,8 @@ A fun project to perhaps commemorate my 3 years in Tokyo, Japan so far.
 
 ## Supported Languages
 
-- English :flag-gb: (`en_UK`) (default)
-- Japanese :flag-ja: (`ja`)
+- English :gb: (`en_UK`) (default)
+- Japanese :jp: (`ja`)
 
 ### Try
 
